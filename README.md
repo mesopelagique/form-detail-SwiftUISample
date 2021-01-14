@@ -22,13 +22,13 @@ cd YourDatabase.4dbase/Resources/Mobile/form/detail
 If your project is not a git repository, just clone
 
 ```bash
-git clone https://github.com/mesopelagique/form-detail-SwiftUISample.git WebArea
+git clone https://github.com/mesopelagique/form-detail-SwiftUISample.git SwiftUISample
 ```
 
 otherwise use a submodule
 
 ```bash
-git submodule add https://github.com/mesopelagique/form-detail-SwiftUISample.git WebArea
+git submodule add https://github.com/mesopelagique/form-detail-SwiftUISample.git SwiftUISample
 ```
 
 <!-- MARKDOWN LINKS & IMAGES -->
