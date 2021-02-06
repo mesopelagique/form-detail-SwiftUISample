@@ -37,4 +37,4 @@ git submodule add https://github.com/mesopelagique/form-detail-SwiftUISample.git
 [swift-shield]: http://img.shields.io/badge/language-swift-orange.svg?style=flat
 [swift-url]: https://developer.apple.com/swift/
 [check-shield]: https://github.com/mesopelagique/form-detail-SwiftUISample/workflows/%E2%9C%85%20check/badge.svg
-[check-url]: https://github.com/mesopelagique/form-detail-SwiftUISample/actions?query=workflow%3A%22%E2%9C%85+check%22
+[check-url]: https://github.com/mesopelagique/4dbisect/actions?query=workflow%3ASwift
