@@ -11,7 +11,7 @@ jobs:
           fetch-depth: 1
       - name: ⚙️ Install swiftlint
         run: |
-          brew install --overwrite swiftlint
+          brew install swiftlint
         env:
           HOMEBREW_NO_INSTALL_CLEANUP: 1
       - name: 🧹 Code Lint
