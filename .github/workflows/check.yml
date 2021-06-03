@@ -33,7 +33,13 @@ jobs:
           iblinter lint
       - name: ⚙️ Install jsonlint
         run: |
-          brew install jsonlint | tee
+          set -x
+          if [ -z "$(which iblinter)" ]; then
+            brew install iblinter
+          else
+            iblinter version  
+          fi
+          exit 0
       - name: 🧹 Manifest Lint
         run: |
           cat manifest.json | jsonlint
