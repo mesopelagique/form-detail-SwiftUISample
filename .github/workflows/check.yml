@@ -12,7 +12,7 @@ jobs:
       - name: ⚙️ Install swiftlint
         run: |
           set -x
-          if [ -z "$(which iblinter)" ]; then
+          if [ -z "$(which swiftlint)" ]; then
             brew install swiftlint
           else
             swiftlint version  
