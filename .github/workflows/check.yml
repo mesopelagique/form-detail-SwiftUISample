@@ -17,7 +17,7 @@ jobs:
       - name: 🧹 Code Lint
         run: |
           if [ ! -f ".swiftlint.yml" ]; then
-            curl -L https://raw.githubusercontent.com/4d-for-ios/check-workflow/master/form/quality/.swiftlint.yml --output .swiftlint.yml
+            curl -L https://raw.githubusercontent.com/4d-for-mobile/check-workflow/master/form/quality/.swiftlint.yml --output .swiftlint.yml
           fi
           swiftlint --strict
       - name: ⚙️ Install iblinter
@@ -28,7 +28,7 @@ jobs:
       - name: 🧹 Storyboard Lint
         run: |
           if [ ! -f ".iblinter.yml" ]; then
-            curl -L https://raw.githubusercontent.com/4d-for-ios/check-workflow/master/form/quality/.iblinter.yml --output .iblinter.yml
+            curl -L https://raw.githubusercontent.com/4d-for-mobile/check-workflow/master/form/quality/.iblinter.yml --output .iblinter.yml
           fi
           iblinter lint
       - name: ⚙️ Install jsonlint
@@ -41,7 +41,7 @@ jobs:
     name: 🏗 build
     runs-on: macos-latest
     env:
-      RELEASE_REPO: "https://raw.githubusercontent.com/4d-for-ios/check-workflow/master"
+      RELEASE_REPO: "https://raw.githubusercontent.com/4d-for-mobile/check-workflow/master"
     steps:
       - name: ⬇️ Checkout
         uses: actions/checkout@master
