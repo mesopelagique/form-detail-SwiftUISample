@@ -40,10 +40,8 @@ jobs:
       - name: ⚙️ Install jsonlint
         run: |
           set -x
-          if [ -z "$(which iblinter)" ]; then
-            brew install iblinter
-          else
-            iblinter version  
+          if [ -z "$(which jsonlint)" ]; then
+            brew install jsonlint 
           fi
           exit 0
       - name: 🧹 Manifest Lint
